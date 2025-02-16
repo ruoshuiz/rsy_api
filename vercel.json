@@ -1,8 +1,14 @@
 {
   "version": 2,
-  "functions": [
+  "functions": {
     "api/**/*.php": {
       "runtime": "vercel-php@0.7.3"
     }
+  },
+  "routes": [
+    { "src": "/api/lanzouyunapi.php", "dest": "/api/lanzouyunapi.php" },
+    { "src": "/api/lanzouyunapiconfig.php", "dest": "/api/lanzouyunapiconfig.php" },
+    { "src": "/api/simple_html_dom.php", "dest": "/api/simple_html_dom.php" }
   ]
+ 
 }
